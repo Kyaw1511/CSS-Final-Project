@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sarabun-Regular;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Delius-Regular;
+    src: url(fonts/Delius/Delius-Regular.ttf);
+
+    font-family: Sarabun-Regular;
+    src: url(fonts/Sarabun/Sarabun-Regular.ttf);
+}
+h2 {
+    background-color: #567c2e;
+    color: rgb(224, 221, 218);
+    border-radius: 6px;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    
+}
+/* Sticky menu bar */
+nav {
+    position: sticky;
+    top: 4px
+    
+}
+.navMenu {
+    /* border: 1px solid hotpink; */
+    display: flex;
+    /* flex-basis: 100%; */
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.navMenu li {
+    /* border: 2px solid indianred; */
+    background-color: #26A69A;
+    border-radius: 4px;
+    margin: 4px 30px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+.navMenu li a {
+    /* border: 2px solid green; */
+    text-decoration: none;
+    font-size: 20px;
+    color: bisque;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    
+}
+
+/* Home */
+.content {
+    /* border: 2px solid seagreen; */
+    background-color: rgba(220, 118, 51, 0.6);
+    
+    border-radius: 6px;
+    display: flex;
+    width: 890px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+.content .left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+
+}
+.left div:first-child{
+    /* border: 2px solid goldenrod; */
+    width: 500px;
+    height: 260px;
+
+}
+.left div h3, .left div h4, 
+.left div p {
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+.left div h4 {
+    font-size: 22px;
+
+}
+.left div p {
+    font-size: 18px;
+    text-indent: 60px;
+    text-align: justify;
+
+}
+.left .icons {
+    font-size: 50px;
+    /* font-weight: bolder; */
+    letter-spacing: 20px;
+    padding: 0;
+}
+.left .icons i:first-child:hover {
+    color: #c4302b;
+}
+.left .icons i:nth-child(2):hover {
+    color: #fa3928;
+}
+.left .icons i:last-child:hover {
+    color: #3b5998;
+}
+.content .right {
+    /* border: 2px solid gold; */
+    flex-basis: 40%;
+    
+}
+.content .right img {
+    border-radius: 40px;
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 20% 100%;
+
+}
+
+/* About me */
+.aboutMe {
+    width: 880px;
+    margin: 0px auto;
+
+}
+.aboutMe .container {
+    /* border: 4px solid lawngreen; */
+    border-radius: 6px;
+    width: 870px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+
+}
+.aboutMe .container .profile {
+    /* border: 2px solid #3b5998; */
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+
+} 
+.aboutMe .container .profile img {
+    /* border: 2px solid red; */
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 60% 10%;
+    padding: 4px;
+    
+}
+.aboutMe .rightContent {
+    /* border: 2px solid sienna; */
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.aboutMe .rightContent p, 
+.aboutMe .rightContent h3,
+.aboutMe .rightContent h4 {
+    text-transform: capitalize;
+    padding: 10px 12px;
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    
+}
+.aboutMe .rightContent h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+.aboutMe .rightContent h4 {
+    font-size: 22px;
+    font-weight: bolder;
+
+}
+.aboutMe .rightContent p {
+    text-indent: 60px;
+    font-size: 18px;
+}
+
+/* My Skill */
+.myskill {
+    width: 880px;
+    margin: 0px auto;
+}
+.myskill  .container {
+    /* border: 4px solid lawngreen; */
+    border-radius: 6px;
+    width: 870px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+}
+.myskill .container .card1 {
+    /* border: 2px solid teal; */
+    flex-basis: 54%;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+}
+.frontend {
+    /* border: 2px solid sienna; */
+    width: 95%;
+    height: 150px;
+    display: inline-block;
+    margin: 10px 12px;
+    
+}
+.frontend h5, 
+.backend h5,
+.design h5 {
+    /* border: 2px solid red; */
+    background-color: #3FBD8F;
+    border-radius: 4px;
+    color: #303231;
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px auto;
+}
+.frontend ul li,
+.backend ul li,
+.design ul li {
+    /* border: 2px solid blue; */
+    background-color: #73A73C;
+    border-radius: 4px;
+    color: rgb(46, 46, 42);
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px 8px;
+    
+}
+.frontend h5:hover,
+.backend h5:hover,
+.design h5:hover {
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    outline-color: #484d4b;
+    color: antiquewhite;
+    font-size: 22px;
+    
+}
+.frontend ul li:hover,
+.backend ul li:hover,
+.design ul li:hover {
+    outline-style: solid;
+    outline-offset: 1px;
+    outline-color: #484d4b;
+    color: antiquewhite;
+    font-size: 18px;
+
+}
+
+.myskill .container .card2 {
+    /* border: 2px solid teal; */
+    display: flex;
+    flex-basis: 46%;
+    align-items: center;
+    justify-content: center;
+
+}
+.myskill .container .card2 img {
+    border-radius: 4px;
+    width: 370px;
+    height: 250px;
+
+}
+
+/* My work */
+.mywork {
+    width: 880px;
+    margin: 0px auto;
+
+}
+.mywork .container {
+    /* border: 4px solid lawngreen; */
+    border-radius: 6px;
+    height: 500px;
+    width: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+     
+}
+.container .card_one,
+.container .card_two,
+.container .card_three {
+    /* border: 2px solid slateblue; */
+    background-color: #448B99;
+    border-radius: 4px;
+    width: 500px;
+    height: 250px;
+    margin: 2px 6px;
+    cursor: pointer;
+
+}
+.container .card_one:hover,
+.container .card_two:hover,
+.container .card_three:hover {
+    outline-color: #484d4b;
+    outline-style: solid;
+    outline-offset: 2px;
+    transform: scale(1.03);
+
+}
+.container .card_one i,
+.container .card_two i,
+.container .card_three i {
+    font-size: 30px;
+    margin: 8px 120px;
+    color: beige;
+
+}
+.container .card_one i:hover,
+.container .card_two i:hover,
+.container .card_three i:hover,
+.container .card_one p:hover,
+.container .card_two p:hover,
+.container .card_three p:hover {
+    color: rgb(194, 189, 189);
+
+}
+.container .card_one h5,
+.container .card_two h5,
+.container .card_three h5 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 4px;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+
+}
+.container .card_one p,
+.container .card_three p,
+.container .card_two p {
+    text-align: justify;
+    text-indent: 40px;
+    letter-spacing: 1px;
+    padding: 6px;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+
+}
+
+/* contact me */
+.contactme {
+    width: 880px;
+    margin: 0px auto;
+}
+.contactme .container {
+    /* border: 4px solid lawngreen; */
+    background-color: rgb(204, 213, 213);
+    border-radius: 6px;
+    height: 500px;
+    width: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+
+}
+.contactInfo {
+    /* border: 2px solid #448B99; */
+    flex-basis: 50%;
+    height: 400px;
+
+}
+.contactInfo .emailInfo,
+.contactInfo .teleInfo,
+.contactInfo .addressInfo {
+    /* border: 2px solid #c4302b; */
+    width: 380px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 24px;
+    
+}
+.contactInfo .emailInfo i:hover,
+.contactInfo .emailInfo h6:hover, 
+.contactInfo .teleInfo i:hover,
+.contactInfo .teleInfo h6:hover,
+.contactInfo .addressInfo i:hover,
+.contactInfo .addressInfo h6:hover{
+    color: #3a5eab;
+    font-size: 28px;
+
+}
+.contactInfo .emailInfo i,
+.contactInfo .teleInfo i,
+.contactInfo .addressInfo i {
+    font-size: 20px;
+    padding: 2px 8px;
+    font-weight: bolder;
+}
+.contactInfo .emailInfo h6,
+.contactInfo .teleInfo h6,
+.contactInfo .addressInfo h6 {
+    font-size: 20px;
+    display: inline;
+    padding: 2px 8px;
+    
+}
+.contactInfo .addressInfo h6 {
+    text-transform: capitalize;
+}
+.comment {
+    /* border: 2px solid #448B99; */
+    flex-basis: 50%;
+}
+.comment input {
+    background-color: #99a5a0;
+    border-radius: 4px;
+    width: 380px;
+    height: 40px;
+    margin: 4px;
+    font-size: 18px;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 0.3px;
+
+}
+.comment textarea {
+    background-color: #99a5a0;
+    border-radius: 4px;
+    margin: 6px;
+    font-size: 18px;
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 0.3px;
+    outline-color: #303231;
+    outline-offset: 1px;
+    outline-style: solid;
+
+}
+.comment button i {
+    font-size: 18px; 
+    padding: 0px 4px;
+}
+.comment button {
+    background-color: #3b5998;
+    border-radius: 4px;
+    color: antiquewhite;
+    width: 110px;
+    height: 36px;
+    font-size: 18px;
+    text-align: center;
+    margin: 4px;
+
+}
+
+/* Footer  */
+.footer .container {
+    /* border: 2px solid #3a5eab; */
+    background-color: #3a5eab;
+    display: flex;
+    flex-basis: 100%;
+    height: 180px;
+    /* margin: 4px 0px; */
+
+}
+.quotes {
+    /* border: 2px solid seagreen; */
+    width: 420px;
+    height: 180px;
+    margin: 4px 32px;
+    display: inline-block;
+}
+.quotes h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+.quotes p {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    word-spacing: 1px;
+}
+.links {
+    /* border: 2px solid seagreen; */
+    width: 420px;
+    height: 180px;
+    margin: 4px 32px;
+    display: inline-block;
+}
+.links h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+.links a {
+    color: #151515;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.8px;
+    word-spacing: 1px;
+}
+.followIcons {
+    /* border: 2px solid seagreen; */
+    width: 420px;
+    height: 180px;
+    margin: 4px 32px;
+    
+}
+.followIcons h4 {
+    /* border: 2px solid salmon; */
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin: 6px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    
+}
+.followIcons div:last-child {
+    /* border: 2px solid green; */
+    width: 200px;
+    margin: 4px auto;
+}
+.followIcons i {
+    /* border: 2px solid sandybrown; */
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    margin: 4px auto;
+    padding: 0px 10px; 
+    
+}
+.updownArrow {
+    /* border: 2px solid saddlebrown; */
+    position: sticky;
+    top: 0px;
+    bottom: 10px;
+}
+
+.updownArrow a:first-child {
+    /* border: 4px solid rgb(25, 113, 69); */
+    font-size: 30px;
+    position: absolute;
+    float: right;
+    right: 0px;
+    padding-right: 6px;
+    /* letter-spacing: 22px; */
+    bottom: 0px;
+    text-decoration: none;
+    color: #3dba64;
+
+}
+.updownArrow a:last-child {
+    /* border: 4px solid rgb(25, 113, 69); */
+    font-size: 30px;
+    position: absolute;
+    float: right;
+    right: 16px;
+    padding-right: 24px;
+    /* letter-spacing: 22px; */
+    bottom: 0px;
+    text-decoration: none;
+    color: #3FBD8F;
+
+}
+
+/* Reponsive for mobile  */
+@media (max-width: 500px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .navMenu {
+        /* border: 2px solid green; */
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .content {
+        border: 2px solid seagreen;
+        flex-direction: column-reverse;
+        /* position: absolute; */
+    }
+}
